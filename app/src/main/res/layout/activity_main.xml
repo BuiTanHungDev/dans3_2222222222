@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:menu="@menu/top_app_bar"
+        app:title="Chào bạn mới"
+
+
+        app:titleTextColor="@color/black"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+       android:layout_below="@id/toolbar"
+        android:layout_above="@id/bottom_nav"
+
+
+
+
+
+        />
+
+    android:layout_below="@+id/toolbar"
+    <!-- <androidx.appcompat.widget.SearchView-->
+<!--     android:id="@+id/searchview"-->
+<!--     android:layout_width="250dp"-->
+<!--     android:layout_height="wrap_content"-->
+<!--     android:layout_alignParentStart="true"-->
+<!--     android:layout_centerHorizontal="true"-->
+<!--     android:layout_marginHorizontal="16dp"-->
+<!--     android:layout_marginStart="33dp"-->
+<!-- -->
+<!--     android:layout_marginLeft="5dp"-->
+<!--     android:layout_marginTop="30dp"-->
+<!--     android:layout_marginBottom="16dp"-->
+<!--     android:background="@drawable/searchview_background" />-->
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+     android:id="@+id/bottom_nav"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+     android:layout_alignParentBottom="true"
+     android:layout_marginBottom="0dp"
+
+     app:itemBackground="@color/white"
+     app:itemIconTint="@color/custum_color_bottom_navigation"
+     app:itemTextColor="@color/custum_color_bottom_navigation"
+
+
+
+
+     app:menu="@menu/menu_buttom_nav"/>
+
+
+
+</RelativeLayout>

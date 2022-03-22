@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dancs3_1</string>
+    <string name="action_home">Home</string>
+    <string name="action_rell">Thông báo</string>
+    <string name="action_sp">Hỗ trợ</string>
+
+    <string name="action_my">Tôi</string>
+
+
+</resources>

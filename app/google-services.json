@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1018329468914",
+    "project_id": "demofirebase-d353d",
+    "storage_bucket": "demofirebase-d353d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018329468914:android:7e8de150dedd6ccbff656b",
+        "android_client_info": {
+          "package_name": "com.google.dancs3_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1018329468914-veqq23in1hru8fmcclm8e4lsffcpdsg8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7gSaSKe6qyGGkcPdS5MiPEc7ta9LifT8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1018329468914-veqq23in1hru8fmcclm8e4lsffcpdsg8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
