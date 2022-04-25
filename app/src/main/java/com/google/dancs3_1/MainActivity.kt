@@ -1,14 +1,17 @@
 package com.google.dancs3_1
 
 import CardAdapter
+import android.content.ClipData
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationItemView
 import android.view.MenuItem;
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.dancs3_1.databinding.ActivityMainBinding
+import fragment.OderFragment
 
 class MainActivity : AppCompatActivity(), CoffeeClicktListener {
 
@@ -16,7 +19,8 @@ class MainActivity : AppCompatActivity(), CoffeeClicktListener {
 
   private lateinit var binding: ActivityMainBinding
 
-
+//
+//           private  val oderFragment = OderFragment
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,18 +33,52 @@ class MainActivity : AppCompatActivity(), CoffeeClicktListener {
 
         setContentView(binding.root);
 
+
+
         populateCoffee()
+
+//        replaceFrament(oderFragment)
+
+
 
        val mainActivity =this
         binding.rcv.apply {
             layoutManager = GridLayoutManager(applicationContext ,2)
           adapter = CardAdapter(coffeeList , mainActivity)
+
+
         }
 
+//            binding.bottomNav.setOnNavigationItemSelectedListener {
+//
+//                        when(it.itemId){
+//
+//                            R.id.action_rell -> replaceFrament(oderFragment)
+//
+//
+//
+//
+//
+//                        }
+//            }
 
 
 
     }
+
+
+//    private fun replaceFrament(fragment: Fragment){
+//        if (fragment !=null){
+//            val transaction = supportFragmentManager.beginTransaction()
+//            transaction.replace(R.id.rcv , fragment)
+//            transaction.commit()
+//
+//        }
+//    }
+
+
+
+
 
     override fun onClick(coffee: coffee) {
         val intent = Intent(applicationContext,DetailActivity::class.java)
